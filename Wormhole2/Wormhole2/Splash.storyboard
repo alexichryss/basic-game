@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="McJ-DL-E2B">
+    <device id="retina5_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="virgo.ttf">
+            <string>Virgo01</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="0sJ-Rm-Zrx">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="McJ-DL-E2B" customClass="SplashViewController" customModule="Wormhole2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SOo-4B-mLR">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starry sky" translatesAutoresizingMaskIntoConstraints="NO" id="9lS-qr-fod">
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8kq-5E-XK4" appends="YES" id="GZO-ko-yWK"/>
+                                </connections>
+                            </imageView>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKN-Mg-taJ">
+                                <rect key="frame" x="74" y="50" width="684" height="304"/>
+                                <string key="text">You're on the run. The only way home is this short cut.
+
+Tap the left side of the screen to thrust up.
+
+Tap the right side of the screen to boost.
+
+Avoid the rectangular spatial anomalies.</string>
+                                <color key="textColor" red="0.91764705879999997" green="0.28235294119999998" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Virgo01" family="Virgo 01" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to enter..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaE-xG-zYe">
+                                <rect key="frame" x="313" y="297.66666666666669" width="187.33333333333337" height="21.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Virgo01" family="Virgo 01" pointSize="19"/>
+                                <color key="textColor" red="0.91764705879999997" green="0.28235294119999998" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wormhole by Alexi Chryssanthou" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8TG-8r-cGh">
+                                <rect key="frame" x="595" y="340.66666666666669" width="173" height="13.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.91764705879999997" green="0.28235294119999998" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rXA-rL-xsc" firstAttribute="bottom" secondItem="8TG-8r-cGh" secondAttribute="bottom" id="1yA-4G-kEs"/>
+                            <constraint firstAttribute="trailing" secondItem="9lS-qr-fod" secondAttribute="trailing" id="91e-Vy-70j"/>
+                            <constraint firstItem="kaE-xG-zYe" firstAttribute="centerX" secondItem="SOo-4B-mLR" secondAttribute="centerX" id="BKg-zg-Qvf"/>
+                            <constraint firstAttribute="bottom" secondItem="9lS-qr-fod" secondAttribute="bottom" id="ERY-HM-k3k"/>
+                            <constraint firstItem="gKN-Mg-taJ" firstAttribute="bottom" secondItem="SOo-4B-mLR" secondAttribute="bottomMargin" id="GI6-rG-1T6"/>
+                            <constraint firstItem="gKN-Mg-taJ" firstAttribute="top" secondItem="SOo-4B-mLR" secondAttribute="topMargin" constant="50" id="KMV-et-rtw"/>
+                            <constraint firstItem="9lS-qr-fod" firstAttribute="leading" secondItem="SOo-4B-mLR" secondAttribute="leading" id="c6s-7C-xXf"/>
+                            <constraint firstItem="8TG-8r-cGh" firstAttribute="trailing" secondItem="rXA-rL-xsc" secondAttribute="trailing" id="eZP-z8-MRF"/>
+                            <constraint firstItem="gKN-Mg-taJ" firstAttribute="leading" secondItem="SOo-4B-mLR" secondAttribute="leadingMargin" constant="10" id="qEg-rV-EWg"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="kaE-xG-zYe" secondAttribute="bottom" constant="35" id="usH-9Z-FV5"/>
+                            <constraint firstItem="9lS-qr-fod" firstAttribute="top" secondItem="SOo-4B-mLR" secondAttribute="top" id="vFK-fX-1v7"/>
+                            <constraint firstItem="gKN-Mg-taJ" firstAttribute="trailing" secondItem="SOo-4B-mLR" secondAttribute="trailingMargin" constant="10" id="zta-uG-blb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rXA-rL-xsc"/>
+                    </view>
+                    <connections>
+                        <outlet property="tapContinueGesture" destination="8kq-5E-XK4" id="NNy-0N-AhM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Sg-Xl-3zJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8kq-5E-XK4">
+                    <connections>
+                        <action selector="tapContinue:" destination="McJ-DL-E2B" id="9e5-6j-vZJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-157.38916256157637" y="-106.40000000000001"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="starry sky" width="2048" height="1367"/>
+    </resources>
+</document>
